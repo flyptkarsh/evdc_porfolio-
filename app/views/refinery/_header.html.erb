@@ -1,0 +1,13 @@
+
+<div class="jumbotron">
+  <div class="container">
+    <div class="col-md-4">
+      <h1 id='logo'>
+        <%= link_to Refinery::Core.site_name, refinery.root_path %>
+      </h1>
+    </div>
+    <div class="col-md-4">
+      <%= Refinery::Pages::MenuPresenter.new(refinery_menu_pages, self).to_html %>
+    </div>
+  </div> 
+</div>
