@@ -60,7 +60,7 @@ Refinery::Pages.configure do |config|
   # config.layout_templates_pattern = 'app', 'views', '{layouts,refinery/layouts}', '*html*'
   # config.view_templates_pattern = 'app', 'views', '{pages,refinery/pages}', '*html*'
 
-  # config.page_title = {:chain_page_title=>false, :ancestors=>{:separator=>" | ", :class=>"ancestors", :tag=>"span"}, :page_title=>{:class=>nil, :tag=>nil, :wrap_if_not_chained=>false}}
+  config.page_title = {:chain_page_title=>false, :ancestors=>{:separator=>" | ", :class=>"ancestors", :tag=>"span"}, :page_title=>{:class=>nil, :tag=>nil, :wrap_if_not_chained=>false}}
 
   # config.absolute_page_links = false
 
