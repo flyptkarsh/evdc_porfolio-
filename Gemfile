@@ -31,6 +31,9 @@ gem 'rails_serve_static_assets'
 # Use Unicorn as the app server
 # gem 'unicorn'
 
+gem 'dragonfly-s3_data_store'
+
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
@@ -56,5 +59,5 @@ gem 'refinerycms-acts-as-indexed', ['~> 2.0', '>= 2.0.1']
 gem 'refinerycms-wymeditor', ['~> 1.0', '>= 1.0.6']
 gem 'refinerycms-authentication-devise', '~> 1.0'
 gem 'refinerycms-blog', git: 'https://github.com/refinery/refinerycms-blog', branch: 'master'
-gem 'refinerycms-wymeditor', ['~> 1.0', '>= 1.0.6']
 gem 'refinerycms-portfolio', github: 'refinery/refinerycms-portfolio', branch: 'master'
+gem 'refinerycms-inquiries', '~> 3.0.0'
