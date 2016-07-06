@@ -1,0 +1,68 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+
+
+ */
+
+
+ h1, h2, h3, h4, h5, h6 {
+   font-family: 'Abril Fatface', cursive !important;
+ }
+ h1 {
+   font-weight: bolder !important;
+ }
+ body {
+   font-family: 'Raleway', sans-serif
+   background-color: #ffffff;
+   background-image: url("http://www.transparenttextures.com/patterns/large-leather.png");
+ }
+
+.row.content {min-height: 1500px}
+
+/* Set gray background color and 100% height */
+.sidenav {
+  color: white !important;
+  background-color: slategrey;
+  position: fixed;
+  /*background-image: url("http://www.transparenttextures.com/patterns/tileable-wood-colored.png");*/
+  height: 1500px;
+}
+
+#page {
+  padding-right: 30%;
+  padding-left: 10%;
+}
+/* Set black background color, white text and some padding */
+footer {
+  background-color: #555;
+  color: white;
+  padding: 15px;
+}
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+  .sidenav {
+    height: auto;
+    padding: 15px;
+  }
+  .row.content {height: auto;}
+}
+.nav>li>a {
+  color: white;
+  font-size: large;
+  font-weight: bolder;
+}
+.nav>li>a:hover {
+  color: grey;
+}

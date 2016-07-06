@@ -30,9 +30,9 @@ gem 'rails_serve_static_assets'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
-
-gem 'dragonfly-s3_data_store'
-
+group :production do
+  gem 'dragonfly-s3_data_store'
+end
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
