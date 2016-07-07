@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160627160804) do
+ActiveRecord::Schema.define(version: 20160707204334) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -319,6 +319,27 @@ ActiveRecord::Schema.define(version: 20160627160804) do
   end
 
   add_index "refinery_settings", ["name"], name: "index_refinery_settings_on_name", using: :btree
+
+  create_table "refinery_video_translations", force: :cascade do |t|
+    t.integer  "refinery_video_id", null: false
+    t.string   "locale",            null: false
+    t.datetime "created_at",        null: false
+    t.datetime "updated_at",        null: false
+    t.string   "title"
+    t.string   "video_key"
+  end
+
+  add_index "refinery_video_translations", ["locale"], name: "index_refinery_video_translations_on_locale", using: :btree
+  add_index "refinery_video_translations", ["refinery_video_id"], name: "index_refinery_video_translations_on_refinery_video_id", using: :btree
+
+  create_table "refinery_videos", force: :cascade do |t|
+    t.string   "title"
+    t.string   "video_key"
+    t.integer  "draft",      default: 1
+    t.integer  "position"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "seo_meta", force: :cascade do |t|
     t.integer  "seo_meta_id"

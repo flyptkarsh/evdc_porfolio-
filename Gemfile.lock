@@ -1,4 +1,13 @@
 GIT
+  remote: git://github.com/bisscomm/refinerycms-videos.git
+  revision: 919bbf4d7fcfcf95fb31513fdd7bec55fadbccf8
+  branch: master
+  specs:
+    refinerycms-videos (3.0.0)
+      globalize (>= 4.0.0, < 5.2)
+      refinerycms-core (~> 3.0.0)
+
+GIT
   remote: git://github.com/refinery/refinerycms-portfolio.git
   revision: 86cf5c928c4d1d588cfe4b0922f47ec41058c33c
   branch: master
@@ -327,6 +336,7 @@ DEPENDENCIES
   refinerycms-blog!
   refinerycms-inquiries (~> 3.0.0)
   refinerycms-portfolio!
+  refinerycms-videos!
   refinerycms-wymeditor (~> 1.0, >= 1.0.6)
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
