@@ -1,0 +1,15 @@
+<% content_for :body do %>
+  <% if @videos.any? %>
+    <ul>
+      <% @videos.each_with_index do |v, index| %>
+        <li>
+          <h2><a href="<%= v.embed_url %>"><%= v.title %></a></h2>
+          <p>ghkghfh <%= youtube_frame( v.embed_url ) %></p> 
+
+        </li>
+      <% end %>
+    </ul>
+  <% end %>
+<% end %>
+
+<%= render '/refinery/content_page' %>
