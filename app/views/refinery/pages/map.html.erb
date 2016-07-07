@@ -1,0 +1,75 @@
+<h1>Travel</h1>
+<h3>Where I Have Been</h3>
+<script type="text/javascript">
+    $(document).ready(function() {
+      $('#vmap').vectorMap({
+          map: 'world_en',
+          background: 'transparent',
+          enableZoom: false,
+          borderWidth: 3,
+          borderColor: 'white',
+          color: 'grey'
+        });
+      $('#vmap').vectorMap('set', 'colors', {
+          us: 'white',
+          fr: "white",
+          br: "white",
+          ar: "white",
+          gr: "white",
+          gb: "white",
+          jp: "white",
+          mx: "white",
+          in: "white",
+          cn: "white",
+          pl: "white",
+          it: "white",
+          ie: "white",
+          es: "white",
+          pt: "white",
+          ca: "white",
+          th: "white",
+          jn: "white",
+          at: "white",
+          be: "white",
+          bl: "white",
+          ch: "white",
+          cz: "white",
+          de: "white",
+          eg: "white",
+          dk: "white",
+          gi: "white",
+          tk: "white",
+          hk: "white",
+          il: "white",
+          is: "white",
+          jo: "white",
+          lu: "white",
+          ma: "white",
+          mc: "white",
+          my: "white",
+          nl: "white",
+          np: "white",
+          ni: "white",
+          np: "white",
+          pt: "white",
+          ru: "white",
+          sg: "white",
+          tr: "white",
+          kp: "white",
+          kr: "white",
+          kh: "white",
+          sa: "white",
+          vn: "white",
+          va: "white",
+          ph: "white"
+
+
+        });
+  });
+</script>
+
+<div id="vmap" style="width: 1000px; height: 800px;"></div>
+<div class="col-md-8">
+  <%= @page.content_for(:body) %>
+
+</div>
