@@ -1,12 +1,6 @@
-<li id="<%= dom_id(gallery) %>" class="gallery">
+<div id="<%= dom_id(gallery) %>" class="col-md-6">
   <%= link_to refinery.portfolio_gallery_path(gallery) do %>
-    <% if gallery.cover_image.present? %>
-      <div class="image">
-        <%= image_fu gallery.cover_image.image, 
-              ::Refinery::Portfolio.cover_image_thumb_size,
-              {:title => gallery.cover_image.title} %>
-      </div>
-    <% end %>
+
 
       <div class="details">
         <h2><%= gallery.title %></h2>
@@ -15,4 +9,4 @@
         <% end %>
       </div>
   <% end %>
-</li>
+</div>
