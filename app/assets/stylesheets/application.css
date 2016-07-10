@@ -30,6 +30,12 @@ h1, h2, h3, h4, h5, h6 {
   background-size: cover;
 
 }
+@media screen and (max-width: 580px) {
+  footer {
+    visibility: hidden !important;
+  }
+}
+
 img {
   max-width: 100% !important;
 }
