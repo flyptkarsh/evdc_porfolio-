@@ -26,8 +26,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Abril Fatface', cursive !important;
 }
 .jumbotron {
-  background-image: url("https://z-1-scontent-lga3-1.xx.fbcdn.net/t31.0-8/10497259_10202529304294010_8379229993098633008_o.jpg?_nc_eui2=v1%3AAeGzMb24cMjJ-IaXVjtG6dr4S2V8dCRiyNYYJyKGNfJq_7CcVQD5ypRViOFj-kPw7Q7f3QuoIBgXCXEOZaKC3m8u6xoBnd7-R_cONBiaj3ErIA");
-  background-position: bottom;
+  background-color: black !important; 
   background-size: cover;
 
 }
