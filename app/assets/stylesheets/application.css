@@ -42,8 +42,10 @@ img {
 .jumbotron a {
     color: white !important;
 }
+.jumbotron li {
+  float: left;
+}
 .jumbotron li a {
-  font-size: xx-large;
   font-family: 'Abril Fatface', cursive !important;
 }
 .jumbotron li a:hover {
