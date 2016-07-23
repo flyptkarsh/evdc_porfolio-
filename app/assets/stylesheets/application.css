@@ -32,7 +32,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media screen and (max-device-width: 700px) {
   body {
-    font-size: x-large !important;
+    font-size: xx-large !important;
   }
   h2, h3, h4, h5, h6 {
     font-size: xx-large !important;
