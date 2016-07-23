@@ -30,12 +30,12 @@ h1, h2, h3, h4, h5, h6 {
   background-size: cover;
 
 }
-@media screen and (max-width: 900px) {
-  footer {
-    visibility: hidden !important;
-  }
+@media screen and (max-device-width: 700px) {
   body {
-    font-size: 30pt !important;
+    font-size: x-large !important;
+  }
+  h2, h3, h4, h5, h6 {
+    font-size: xx-large !important;
   }
 }
 
