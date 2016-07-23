@@ -1,6 +1,6 @@
 <div class="container">
   <div class="col-md-12">
-    <h2>
+    <h1>
       <a href="https://www.linkedin.com/in/patrickarsh" target="_blank">
           <%= fa_icon "linkedin" %>
       </a>
@@ -13,7 +13,10 @@
       <a href="http://www.patrickarsh.io/contact" target="_blank">
         <%= fa_icon "envelope" %>
       </a>
-    </h2>
+    </h1>
+    <div id="footerMenu"class="row">
+      <%= Refinery::Pages::MenuPresenter.new(refinery_menu_pages, self).to_html %>
+    </div>
     <small>
       <%= t('.copyright', :year => Time.now.year, :site_name => Refinery::Core.site_name) %>
     </small>

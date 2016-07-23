@@ -30,6 +30,13 @@ h1, h2, h3, h4, h5, h6 {
   background-size: cover;
 
 }
+#footerMenu {
+  font-size: large !important;
+}
+.nav>li {
+  float: left;
+}
+
 @media screen and (max-device-width: 700px) {
   body {
     font-size: xx-large !important;
