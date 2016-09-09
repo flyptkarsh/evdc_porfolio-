@@ -50,7 +50,9 @@ group :development do
   gem 'spring'
 end
 
-gem "font-awesome-rails"
+# react rails for frontend 
+gem 'react-rails'
+gem 'font-awesome-rails'
 # Refinery CMS
 gem 'refinerycms', '~> 3.0'
 
