@@ -26,6 +26,14 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: MPIDeco !important;
 }
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+section#page {
+  padding-top: 20% !important;
+}
 .jumbotron {
   background-color: black !important;
   background-size: cover;
@@ -37,13 +45,33 @@ h1, h2, h3, h4, h5, h6 {
 .nav>li {
   float: left;
 }
-
+#smallLogo {
+  color: white;
+  display: none;
+}
+footer {
+  background-color: darkgrey !important;
+  font-family: MPIDeco !important;
+  font-size: xx-large;
+}
+#menu > ul > li.first > a {
+  padding-left: 0px;
+}
 @media screen and (max-device-width: 700px) {
   body {
     font-size: xx-large !important;
   }
   h2, h3, h4, h5, h6 {
-    font-size: large !important;
+    font-size: xx-large !important;
+  }
+  section#page {
+    padding-top: 40% !important;
+  }
+  #logo > a {
+    display: none;
+  }
+  #smallLogo {
+    display: inline;
   }
 }
 

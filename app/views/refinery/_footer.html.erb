@@ -1,4 +1,5 @@
 <div class="container">
+  <%= Refinery::Pages::MenuPresenter.new(refinery_menu_pages, self).to_html %>
   <h1>
     <a href="https://www.linkedin.com/in/patrickarsh" target="_blank">
         <%= fa_icon "linkedin" %>
@@ -13,9 +14,6 @@
       <%= fa_icon "envelope" %>
     </a>
   </h1>
-  <div id="footerMenu"class="row">
-    <%= Refinery::Pages::MenuPresenter.new(refinery_menu_pages, self).to_html %>
-  </div>
   <address>
       <a href="mailto:ptkarsh@gmail.com">PKD+D</a><br>
       <a href="tel:17149152596">+1(714)915-2596</a><br>
