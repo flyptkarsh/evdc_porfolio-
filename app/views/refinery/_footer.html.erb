@@ -1,24 +1,30 @@
 <div class="container">
-  <div class="col-md-12">
-    <h1>
-      <a href="https://www.linkedin.com/in/patrickarsh" target="_blank">
-          <%= fa_icon "linkedin" %>
-      </a>
-      <a href="https://github.com/flyptkarsh" target="_blank">
-        <%= fa_icon "github" %>
-      </a>
-      <a href="https://www.facebook.com/ptkarsh" target="_blank">
-        <%= fa_icon "facebook" %>
-      </a>
-      <a href="http://www.patrickarsh.io/contact" target="_blank">
-        <%= fa_icon "envelope" %>
-      </a>
-    </h1>
-    <div id="footerMenu"class="row">
-      <%= Refinery::Pages::MenuPresenter.new(refinery_menu_pages, self).to_html %>
-    </div>
-    <small>
-      <%= t('.copyright', :year => Time.now.year, :site_name => Refinery::Core.site_name) %>
-    </small>
+  <h1>
+    <a href="https://www.linkedin.com/in/patrickarsh" target="_blank">
+        <%= fa_icon "linkedin" %>
+    </a>
+    <a href="https://github.com/flyptkarsh" target="_blank">
+      <%= fa_icon "github" %>
+    </a>
+    <a href="https://www.facebook.com/ptkarsh" target="_blank">
+      <%= fa_icon "facebook" %>
+    </a>
+    <a href="http://www.patrickarsh.io/contact" target="_blank">
+      <%= fa_icon "envelope" %>
+    </a>
+  </h1>
+  <div id="footerMenu"class="row">
+    <%= Refinery::Pages::MenuPresenter.new(refinery_menu_pages, self).to_html %>
   </div>
+  <address>
+      <a href="mailto:ptkarsh@gmail.com">PKD+D</a><br>
+      <a href="tel:17149152596">+1(714)915-2596</a><br>
+      <a href="mailto:ptkarsh@gmail.com">ptkarsh@gmail.com</a><br>
+      431 East 9th Street<br>
+      New York, New York
+  </address>
+  <small>
+    Veteran Owned Business<br>
+    <%= t('.copyright', :year => Time.now.year, :site_name => Refinery::Core.site_name) %>
+  </small>
 </div>
