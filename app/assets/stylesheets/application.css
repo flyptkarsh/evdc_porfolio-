@@ -55,7 +55,11 @@ footer {
   font-size: xx-large;
 }
 #menu > ul > li.first > a {
-  padding-left: 0px;
+  padding-left: 1px;
+}
+#menu > ul > li > a {
+  padding-right: 10px;
+  font-size: xx-large;
 }
 @media screen and (max-device-width: 700px) {
   body {
