@@ -30,14 +30,22 @@ header {
   position: fixed;
   width: 100%;
   z-index: 100;
+
 }
 section#page {
   padding-top: 20% !important;
 }
-.jumbotron {
-  background-color: black !important;
-  background-size: cover;
 
+.jumbotron {
+  background: seagreen !important;
+  background-size: cover;
+  background-position: center;
+
+}
+.jumbotron:hover {
+  background: black !important;
+  transition-timing-function: ease-in-out !important;
+  transition: background 4s;
 }
 #footerMenu {
   font-size: large !important;
@@ -50,14 +58,17 @@ section#page {
   display: none;
 }
 footer {
-  background-color: darkgrey !important;
+  background-color: SlateGrey !important;
   font-family: MPIDeco !important;
   font-size: xx-large;
+}
+footer a, footer address, footer small {
+  color: white;
 }
 
 #menu > ul > li > a {
   padding-left: 1px;
-  padding-right: 15px;
+  padding-right: 20px;
   font-size: xx-large;
 }
 @media screen and (max-device-width: 700px) {
