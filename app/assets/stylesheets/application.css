@@ -54,11 +54,10 @@ footer {
   font-family: MPIDeco !important;
   font-size: xx-large;
 }
-#menu > ul > li.first > a {
-  padding-left: 1px;
-}
+
 #menu > ul > li > a {
-  padding-right: 10px;
+  padding-left: 1px;
+  padding-right: 15px;
   font-size: xx-large;
 }
 @media screen and (max-device-width: 700px) {
