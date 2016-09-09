@@ -14,6 +14,7 @@
  *= require font-awesome
  *= require refinery/formatting
  *= require refinery/theme
+  *= require mpi_deco_webfont
  *= require_self
  */
 
@@ -23,7 +24,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Abril Fatface', cursive !important;
+  font-family: MPIDeco !important;
 }
 .jumbotron {
   background-color: black !important;
@@ -56,7 +57,7 @@ img {
   float: left;
 }
 .jumbotron li a {
-  font-family: 'Abril Fatface', cursive !important;
+  font-family: MPIDeco !important;
 }
 .jumbotron li a:hover {
   color: slategrey !important;
